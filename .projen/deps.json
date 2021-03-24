@@ -28,6 +28,10 @@
       "type": "build"
     },
     {
+      "name": "@sanity/cli",
+      "type": "runtime"
+    },
+    {
       "name": "@tailwindcss/postcss7-compat",
       "version": "^2",
       "type": "runtime"
