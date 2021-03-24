@@ -11,7 +11,7 @@ const project = new web.NextJsTypeScriptProject({
     'postcss@^7', 
     'autoprefixer@^9',
     '@sanity/cli',
-    '@sanity/core'
+    '@sanity/core',
   ],
   
   devDeps: [
