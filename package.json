@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@sanity/cli": "^2.6.0",
+    "@sanity/core": "^2.6.2",
     "@tailwindcss/postcss7-compat": "^2",
     "autoprefixer": "^9",
     "next": "^10.0.9",

@@ -10,7 +10,8 @@ const project = new web.NextJsTypeScriptProject({
     '@tailwindcss/postcss7-compat@^2',
     'postcss@^7', 
     'autoprefixer@^9',
-    '@sanity/cli'
+    '@sanity/cli',
+    '@sanity/core'
   ],
   
   devDeps: [

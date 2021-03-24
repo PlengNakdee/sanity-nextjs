@@ -32,6 +32,10 @@
       "type": "runtime"
     },
     {
+      "name": "@sanity/core",
+      "type": "runtime"
+    },
+    {
       "name": "@tailwindcss/postcss7-compat",
       "version": "^2",
       "type": "runtime"
