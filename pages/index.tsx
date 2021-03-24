@@ -5,12 +5,13 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>THIS IS A TEST!!!!!!</title>
       </Head>
 
       <main>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
+          <p>This is a paragraph</p>
         </h1>
 
         <p className="description">

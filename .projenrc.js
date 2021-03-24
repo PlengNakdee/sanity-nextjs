@@ -5,6 +5,17 @@ const project = new web.NextJsTypeScriptProject({
   jsiiFqn: "projen.web.NextJsTypeScriptProject",
   name: 'sanity-nextjs',
 
+  deps: [
+    'tailwindcss@npm:@tailwindcss/postcss7-compat',
+    '@tailwindcss/postcss7-compat@^2',
+    'postcss@^7', 
+    'autoprefixer@^9'
+  ],
+  
+  devDeps: [
+
+  ],
+
   
 });
 

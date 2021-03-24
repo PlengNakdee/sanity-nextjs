@@ -28,7 +28,17 @@
       "type": "build"
     },
     {
+      "name": "@tailwindcss/postcss7-compat",
+      "version": "^2",
+      "type": "runtime"
+    },
+    {
       "name": "autoprefixer",
+      "type": "runtime"
+    },
+    {
+      "name": "autoprefixer",
+      "version": "^9",
       "type": "runtime"
     },
     {
@@ -37,6 +47,11 @@
     },
     {
       "name": "postcss",
+      "type": "runtime"
+    },
+    {
+      "name": "postcss",
+      "version": "^7",
       "type": "runtime"
     },
     {
@@ -49,6 +64,11 @@
     },
     {
       "name": "tailwindcss",
+      "type": "runtime"
+    },
+    {
+      "name": "tailwindcss",
+      "version": "npm:@tailwindcss/postcss7-compat",
       "type": "runtime"
     }
   ],
