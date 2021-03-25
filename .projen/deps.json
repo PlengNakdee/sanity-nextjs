@@ -50,7 +50,15 @@
       "type": "runtime"
     },
     {
+      "name": "concurrently",
+      "type": "runtime"
+    },
+    {
       "name": "next",
+      "type": "runtime"
+    },
+    {
+      "name": "next-sanity",
       "type": "runtime"
     },
     {

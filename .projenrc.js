@@ -1,4 +1,4 @@
-const { web } = require('projen');
+const { web, tasks } = require('projen');
 
 const project = new web.NextJsTypeScriptProject({
   defaultReleaseBranch: 'main',
@@ -13,6 +13,7 @@ const project = new web.NextJsTypeScriptProject({
     '@sanity/cli',
     '@sanity/core',
     'concurrently',
+    'next-sanity',
   ],
   
   devDeps: [
@@ -20,6 +21,11 @@ const project = new web.NextJsTypeScriptProject({
   ],
 
 });
+// const build = project.tasks.tryFind('build');
+// build.reset();
+// build.description = 'Perform a full build of frontend and backend';
+// build.exec('yarn build:frontend');
+// build.exec('yarn build:backend');
 
 const devFrontend = project.addTask('dev:frontend', {
     description: 'Dev Next.js & Sanity',
