@@ -22,9 +22,11 @@ logs
 node_modules/
 npm-debug.log*
 pids
+public/config.js
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 yarn-debug.log*
 yarn-error.log*
+!/.eslintrc.json
 !/.github/dependabot.yml
 !/.github/pull_request_template.md
 !/.github/workflows/build.yml
@@ -33,6 +35,7 @@ yarn-error.log*
 !/.projen/deps.json
 !/.projen/tasks.json
 !/.projenrc.js
+!/.theia/settings.json
 !/.versionrc.json
 !/LICENSE
 !/next-env.d.ts
@@ -41,5 +44,6 @@ yarn-error.log*
 !/postcss.config.json
 !/tailwind.config.json
 !/test
+!/tsconfig.eslint.json
 !/tsconfig.json
 !version.json
