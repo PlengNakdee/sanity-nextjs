@@ -46,6 +46,10 @@
       "type": "runtime"
     },
     {
+      "name": "bootstrap",
+      "type": "runtime"
+    },
+    {
       "name": "concurrently",
       "type": "runtime"
     },
@@ -76,6 +80,10 @@
     },
     {
       "name": "react",
+      "type": "runtime"
+    },
+    {
+      "name": "react-bootstrap",
       "type": "runtime"
     },
     {

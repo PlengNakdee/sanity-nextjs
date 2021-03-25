@@ -18,6 +18,8 @@ const project = new web.NextJsTypeScriptProject({
     'react-dom',
     'react-router',
     'react-router-dom',
+    'react-bootstrap',
+    'bootstrap'
   ],
   
   devDeps: [
