@@ -145,36 +145,6 @@
           "exec": "next telemetry"
         }
       ]
-    },
-    "dev:frontend": {
-      "name": "dev:frontend",
-      "category": "00.build",
-      "description": "Dev Next.js & Sanity",
-      "steps": [
-        {
-          "exec": "concurrently \"next dev\" \"cd studio && sanity start\""
-        }
-      ]
-    },
-    "build:frontend": {
-      "name": "build:frontend",
-      "category": "00.build",
-      "description": "Build Next.js & Sanity",
-      "steps": [
-        {
-          "exec": "echo \"Building Sanity to public/studio…\" && cd studio && sanity build ../public/studio -y && cd .. && cross-env NODE_ENV=production next build"
-        }
-      ]
-    },
-    "start:next": {
-      "name": "start:next",
-      "category": "00.build",
-      "description": "Start Next.js",
-      "steps": [
-        {
-          "exec": "next start"
-        }
-      ]
     }
   },
   "env": {
