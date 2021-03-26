@@ -62,7 +62,11 @@
     },
     {
       "name": "@sanity/cli",
-      "version": "^",
+      "version": "^2",
+      "type": "runtime"
+    },
+    {
+      "name": "@sanity/client",
       "type": "runtime"
     },
     {

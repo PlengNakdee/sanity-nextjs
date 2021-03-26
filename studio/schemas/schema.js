@@ -32,6 +32,11 @@ export default createSchema({
           type: 'slug'
         },
         {
+          title: 'Image',
+          name: 'image',
+          type: 'image'
+        },
+        {
           title: 'Text',
           name: 'text',
           type: 'array',
