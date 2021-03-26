@@ -217,10 +217,10 @@
     "@sanity/block-content-to-hyperscript" "^2.0.10"
     prop-types "^15.6.2"
 
-"@sanity/cli@^2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-2.6.0.tgz#ffc0ba15cf6e34627538fe8ba655369f5a655a48"
-  integrity sha512-lZFSF9ahk67YI/hYXP7RpQv1iubw5N/OA8+X7CjiLqoBe0C7kQ/B7hPnw3TyMz4r67Mwt5ApnsKd5466S5M3/A==
+"@sanity/cli@^":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-2.7.1.tgz#40af5d9233fa3e88c75bb5a1baf6264ae85fb760"
+  integrity sha512-4z+YEbO2J92NRuTRZ9F60fZhRSu0lwSzkJmGye9zLaStT7B2RN/58M+dUMilWCCHMKHcrMI4fk0TR8/JPuLtlw==
 
 "@sanity/client@2.7.0":
   version "2.7.0"
