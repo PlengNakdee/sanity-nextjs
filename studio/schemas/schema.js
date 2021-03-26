@@ -23,7 +23,7 @@ export default createSchema({
         },
         {
           title: "Category",
-          name: "Category",
+          name: "category",
           type: "string"
         },
         {
