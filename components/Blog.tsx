@@ -1,7 +1,6 @@
-import { getAllBlogs } from '../lib/api';
 import BlogContent from './BlogContent';
 
-const Blog = ({ blogs }) => {
+const Blog = () => {
   return (
     <div className="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
       <div className="absolute inset-0">
@@ -14,28 +13,17 @@ const Blog = ({ blogs }) => {
       </h2>
           <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
             This should show JSON
-             {JSON.stringify(blogs)}
           </p>
         </div>
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
 
-          <BlogContent {...blogs} />
-          <BlogContent {...blogs} />
-          <BlogContent {...blogs} />
+          <BlogContent />
+          <BlogContent />
+          <BlogContent />
 
         </div>
       </div>
     </div>
   )
 }
-
-export async function getStaticProps() {
-  const blogs = await getAllBlogs();
-  return {
-    props: {
-      blogs
-    }
-  }
-}
-
 export default Blog;

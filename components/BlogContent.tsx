@@ -1,6 +1,5 @@
-import { getAllBlogs } from '../lib/api';
 
-const BlogContent = ({ blogs }) => {
+const BlogContent = () => {
   return (
     <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
       <div className="flex-shrink-0">
@@ -11,13 +10,12 @@ const BlogContent = ({ blogs }) => {
           <p className="text-sm font-medium text-indigo-600">
             <a href="#" className="hover:underline">
               Video
-               {JSON.stringify(blogs)}
             </a>
           </p>
           <a href="#" className="block mt-2">
             <p className="text-xl font-semibold text-gray-900">
               How to use search engine optimization to drive sales
-              </p>
+            </p>
             <p className="mt-3 text-base text-gray-500">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.
               </p>
@@ -52,15 +50,6 @@ const BlogContent = ({ blogs }) => {
       </div>
     </div>
   )
-}
-
-export async function getStaticProps() {
-  const blogs = await getAllBlogs();
-  return {
-    props: {
-      blogs
-    }
-  }
 }
 
 export default BlogContent;
