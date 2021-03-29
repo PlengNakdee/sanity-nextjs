@@ -1,0 +1,34 @@
+text{
+  "category": "Article",
+  "imageUrl": "https://cdn.sanity.io/images/jsmjecmr/production/fba171ac9382b7f4dbb87fb33bca3b75621da352-1280x854.jpg",
+  "text": [
+    {
+      "_key": "d2ea06056dfe",
+      "_type": "block",
+      "children": [
+        {
+          "_key": "9815e3b15d71",
+          "_type": "span",
+          "marks": [
+            "010c26286765"
+          ],
+          "text": "Lorem"
+        },
+        {
+          "_key": "59dd6d7f3d11",
+          "_type": "span",
+          "marks": [],
+          "text": " ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec metus nec nisi malesuada suscipit sed at dolor. Ut ut dui quis mauris fringilla hendrerit. Duis mattis hendrerit massa id consectetur."
+        }
+      ],
+      "markDefs": [
+        {
+          "_key": "010c26286765",
+          "_type": "link"
+        }
+      ],
+      "style": "normal"
+    }
+  ],
+  "title": "First Blog"
+}

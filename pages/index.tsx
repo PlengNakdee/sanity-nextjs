@@ -1,6 +1,6 @@
 import Hero from '../components/Hero';
 import Leaderboard from '../components/Leaderboard';
-// import Blog from '../components/Blog';
+import Blog from '../components/Blog';
 import Footer from '../components/Footer';
 import { getAllBlogs } from '../lib/api';
 
@@ -25,7 +25,7 @@ export default function Home({ blogs }) {
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div className="flex-shrink-0">
-                <img className="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixqx=NvgVnYOcQe&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt="" />
+                <img className="h-48 w-full object-cover" src={blogs.imageUrl} alt="" />
               </div>
               <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div className="flex-1">
@@ -39,7 +39,8 @@ export default function Home({ blogs }) {
                       {blogs.title}
                     </p>
                     <p className="mt-3 text-base text-gray-500">
-                      This should be text
+                      this should be text
+                       {blogs.text}
                     </p>
                   </a>
                 </div>
