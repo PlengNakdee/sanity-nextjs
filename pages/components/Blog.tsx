@@ -1,6 +1,5 @@
-// import BlogContent from './BlogContent';
-// import { getAllBlogs } from '../lib/api';
-import client from '../lib/sanity';
+import { getAllBlogs } from '../lib/api';
+// import BlogContents from './BlogContents';
 
 // const blogs = {
 //   sections: [
@@ -43,31 +42,20 @@ export default function Blog({ blogs }: any) {
         </div>
         <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
           {/* {
-            blogs.map(({ title, imageUrl, category }) => (
-              <BlogContent title={title} imageUrl={imageUrl} category={category} />
+            content.map(({ title, imageUrl, category }: any) => (
+              <BlogContents title={title} imageUrl={imageUrl} category={category} />
             ))
           } */}
-          This should show JSON
           {JSON.stringify(blogs)}
-
         </div>
       </div>
     </div>
   )
 }
 
-export async function getAllBlogs() {
-  const results = await client
-    .fetch(`*[_type == "blog"]{
-      title,
-      category,
-      "imageUrl": image.asset->url
-    }[0]`);
-  return results;
-}
-
 export async function getStaticProps() {
   const blogs = await getAllBlogs();
+  console.log(blogs)
   return {
     props: {
       blogs

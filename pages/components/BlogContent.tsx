@@ -1,5 +1,5 @@
 
-const BlogContent = ({ title, imageUrl, category }: any) => {
+export default function BlogContents({ imageUrl, category, title }: any) {
   return (
     <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
       <div className="flex-shrink-0">
@@ -16,9 +16,9 @@ const BlogContent = ({ title, imageUrl, category }: any) => {
             <p className="text-xl font-semibold text-gray-900">
               {title}
             </p>
-            <p className="mt-3 text-base text-gray-500">
+            {/* <p className="mt-3 text-base text-gray-500">
               Place holder text
-            </p>
+            </p> */}
           </a>
         </div>
         <div className="mt-6 flex items-center">
@@ -51,5 +51,3 @@ const BlogContent = ({ title, imageUrl, category }: any) => {
     </div>
   )
 }
-
-export default BlogContent;

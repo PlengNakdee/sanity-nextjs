@@ -6,6 +6,6 @@ export async function getAllBlogs() {
       title,
       category,
       "imageUrl": image.asset->url
-    }[0]`);
+    }| order(date desc)[0..2]`);
   return results;
 }
