@@ -17,8 +17,8 @@ const BlogContent = ({ title, imageUrl, category }) => {
               {title}
             </p>
             <p className="mt-3 text-base text-gray-500">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.
-              </p>
+              Place holder text
+            </p>
           </a>
         </div>
         <div className="mt-6 flex items-center">
