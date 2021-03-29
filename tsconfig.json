@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "rootDir": "pages",
-    "outDir": "components/lib",
+    "outDir": "lib",
     "alwaysStrict": true,
     "declaration": true,
     "experimentalDecorators": true,
@@ -42,6 +42,6 @@
   ],
   "exclude": [
     "node_modules",
-    "components/lib"
+    "lib"
   ]
 }
