@@ -1,6 +1,6 @@
 import Hero from '../components/Hero';
 import Leaderboard from '../components/Leaderboard';
-import Blog from '../components/Blog';
+// import Blog from '../components/Blog';
 import Footer from '../components/Footer';
 import { getAllBlogs } from '../lib/api';
 
