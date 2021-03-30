@@ -23,6 +23,12 @@ export default createSchema({
           validation: Rule => Rule.required()
         },
         {
+          title: "Subtitle",
+          name: "subtitle",
+          type: "string",
+          validation: Rule => Rule.required()
+        },
+        {
           title: "Category",
           name: "category",
           type: "string",
@@ -31,7 +37,7 @@ export default createSchema({
         {
           title: 'Slug',
           name: 'slug',
-          type: 'slug',
+          type: 'string',
           validation: Rule => Rule.required()
         },
         {
@@ -49,10 +55,16 @@ export default createSchema({
         {
           title: 'Text',
           name: 'text',
-          type: 'array',
-          of: [{ type: 'block' }],
+          type: 'text',
           validation: Rule => Rule.required()
-        }
+        },
+        // {
+        //   title: 'Text',
+        //   name: 'text',
+        //   type: 'array',
+        //   of: [{ type: 'block' }],
+        //   validation: Rule => Rule.required()
+        // }
       ],
     }
   ]),

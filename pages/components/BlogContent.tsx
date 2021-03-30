@@ -1,6 +1,6 @@
 // import { getAllBlogs } from "../lib/api";
 
-const BlogContents = ({ imageUrl, category, title, releaseDate, slug }: any) => {
+const BlogContents = ({ imageUrl, category, title, releaseDate, slug, subtitle }: any) => {
   return (
     <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
       <div className="flex-shrink-0">
@@ -13,14 +13,13 @@ const BlogContents = ({ imageUrl, category, title, releaseDate, slug }: any) => 
               {category}
             </a>
           </p>
-          {/* {`/${slug}`} */}
           <a href={`/${slug}`} className="block mt-2">
             <p className="text-xl font-semibold text-gray-900">
               {title}
             </p>
-            {/* <p className="mt-3 text-base text-gray-500">
-              Place holder text
-            </p> */}
+            <p className="mt-3 text-base text-gray-500">
+              {subtitle}
+            </p>
           </a>
         </div>
         <div className="mt-6 flex items-center">
@@ -55,20 +54,3 @@ const BlogContents = ({ imageUrl, category, title, releaseDate, slug }: any) => 
 
 export default BlogContents;
 
-// export async function getStaticPaths() {
-//   const blogs = await getAllBlogs();
-//   const paths = blogs?.map(b => ({ params: { slug: b.slug } }));
-//   return {
-//     paths,
-//     fallback: false
-//   }
-// }
-
-// export async function getStaticPaths() {
-//   const blogs = await getAllBlogs();
-//   return {
-//     props: {
-//       blogs
-//     }
-//   }
-// }
