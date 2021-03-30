@@ -24,11 +24,10 @@ const project = new web.NextJsTypeScriptProject({
     'next-router',
     '@sanity/cli@^2',
     '@sanity/client',
-    'next@latest',
     'react',
     'react-dom',
-    // 'react-router',
-    // 'react-router-dom^16.7.0',
+    'react-router',
+    'react-router-dom',
   ],
 
   devDeps: [

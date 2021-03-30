@@ -47,7 +47,7 @@
     },
     {
       "name": "projen",
-      "version": "^0.17.18",
+      "version": "^0.17.20",
       "type": "build"
     },
     {
@@ -112,11 +112,6 @@
       "type": "runtime"
     },
     {
-      "name": "next",
-      "version": "latest",
-      "type": "runtime"
-    },
-    {
       "name": "postcss",
       "type": "runtime"
     },
@@ -130,17 +125,23 @@
       "type": "runtime"
     },
     {
-      "name": "react-dom",
-      "type": "runtime"
-    },
-    {
-      "name": "react-dom",
-      "version": "16.7.0",
-      "type": "runtime"
-    },
-    {
       "name": "react",
-      "version": "16.7.0",
+      "type": "runtime"
+    },
+    {
+      "name": "react-dom",
+      "type": "runtime"
+    },
+    {
+      "name": "react-dom",
+      "type": "runtime"
+    },
+    {
+      "name": "react-router",
+      "type": "runtime"
+    },
+    {
+      "name": "react-router-dom",
       "type": "runtime"
     },
     {
