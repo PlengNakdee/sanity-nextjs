@@ -1,3 +1,4 @@
+// import { getAllBlogs } from "../lib/api";
 
 export default function BlogContents({ imageUrl, category, title, releaseDate, slug }: any) {
   return (
@@ -8,7 +9,7 @@ export default function BlogContents({ imageUrl, category, title, releaseDate, s
       <div className="flex-1 bg-white p-6 flex flex-col justify-between">
         <div className="flex-1">
           <p className="text-sm font-medium text-indigo-600">
-            <a href="#" className="hover:underline">
+            <a href={`/${slug}`} className="hover:underline">
               {category}
             </a>
           </p>
@@ -23,14 +24,14 @@ export default function BlogContents({ imageUrl, category, title, releaseDate, s
         </div>
         <div className="mt-6 flex items-center">
           <div className="flex-shrink-0">
-            <a href="#">
+            <a href={`/${slug}`}>
               <span className="sr-only">Brenna Goyette</span>
               <img className="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixqx=NvgVnYOcQe&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" />
             </a>
           </div>
           <div className="ml-3">
             <p className="text-sm font-medium text-gray-900">
-              <a href="#" className="hover:underline">
+              <a href={`/${slug}`} className="hover:underline">
                 Brenna Goyette
                 </a>
             </p>
@@ -50,3 +51,21 @@ export default function BlogContents({ imageUrl, category, title, releaseDate, s
     </div>
   )
 }
+
+// export async function getStaticPaths() {
+//   const blogs = await getAllBlogs();
+//   const paths = blogs?.map(b => ({ params: { slug: b.slug } }));
+//   return {
+//     paths,
+//     fallback: false
+//   }
+// }
+
+// export async function getStaticPaths() {
+//   const blogs = await getAllBlogs();
+//   return {
+//     props: {
+//       blogs
+//     }
+//   }
+// }

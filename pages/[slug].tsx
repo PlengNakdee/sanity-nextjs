@@ -1,6 +1,9 @@
 // @ts-ignore
+
+import { getAllBlogs } from "./lib/api";
+
 // import { useRouter } from 'next-router';
-export default function BlogPage() {
+export default function BlogPage({ blogs }: any) {
 
   return (
     <div className="bg-white overflow-hidden">
@@ -8,8 +11,8 @@ export default function BlogPage() {
         <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
         <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
           <div>
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Case Study</h2>
-            <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">First Blog</h3>
+            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">{blogs.category}</h2>
+            <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">{blogs.title}</h3>
           </div>
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
@@ -25,7 +28,8 @@ export default function BlogPage() {
             <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
               <figure>
                 <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
-                  <img className="rounded-lg shadow-lg object-cover object-center" src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376" />
+                  <img className="rounded-lg shadow-lg object-cover object-center" src={blogs.ImageUrl} alt="" width="1184" height="1376" />
+                  {/* <img className="rounded-lg shadow-lg object-cover object-center" src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80" alt="Whitney leaning against a railing on a downtown street" width="1184" height="1376" /> */}
                 </div>
                 <figcaption className="mt-3 flex text-sm text-gray-500">
 
@@ -60,4 +64,21 @@ export default function BlogPage() {
       </div>
     </div>
   )
+}
+
+// export async function getStaticPaths() {
+//   const blogs = await getAllBlogs();
+//   const paths = blogs?.map(b => ({ params: { slug: b.slug } }));
+//   return {
+//     paths,
+//     fallback: false
+//   }
+// }
+export async function getStaticProps() {
+  const blogs = await getAllBlogs();
+  return {
+    props: {
+      blogs
+    }
+  }
 }
