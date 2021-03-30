@@ -1,5 +1,5 @@
 
-export default function BlogContents({ imageUrl, category, title, releaseDate }: any) {
+export default function BlogContents({ imageUrl, category, title, releaseDate, slug }: any) {
   return (
     <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
       <div className="flex-shrink-0">
@@ -12,7 +12,7 @@ export default function BlogContents({ imageUrl, category, title, releaseDate }:
               {category}
             </a>
           </p>
-          <a href="#" className="block mt-2">
+          <a href={`/${slug}`} className="block mt-2">
             <p className="text-xl font-semibold text-gray-900">
               {title}
             </p>

@@ -47,7 +47,7 @@
     },
     {
       "name": "projen",
-      "version": "^0.17.17",
+      "version": "^0.17.18",
       "type": "build"
     },
     {
@@ -104,11 +104,16 @@
       "type": "runtime"
     },
     {
-      "name": "next",
+      "name": "next-router",
       "type": "runtime"
     },
     {
       "name": "next-sanity",
+      "type": "runtime"
+    },
+    {
+      "name": "next",
+      "version": "latest",
       "type": "runtime"
     },
     {
@@ -125,23 +130,17 @@
       "type": "runtime"
     },
     {
+      "name": "react-dom",
+      "type": "runtime"
+    },
+    {
+      "name": "react-dom",
+      "version": "16.7.0",
+      "type": "runtime"
+    },
+    {
       "name": "react",
-      "type": "runtime"
-    },
-    {
-      "name": "react-dom",
-      "type": "runtime"
-    },
-    {
-      "name": "react-dom",
-      "type": "runtime"
-    },
-    {
-      "name": "react-router",
-      "type": "runtime"
-    },
-    {
-      "name": "react-router-dom",
+      "version": "16.7.0",
       "type": "runtime"
     },
     {

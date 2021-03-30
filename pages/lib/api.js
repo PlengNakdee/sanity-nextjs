@@ -6,6 +6,7 @@ export async function getAllBlogs() {
       title,
       category,
       releaseDate,
+      slug,
       "imageUrl": image.asset->url
     }| order(date desc)[0..2]`);
   return results;
