@@ -14,6 +14,14 @@
       "type": "build"
     },
     {
+      "name": "@types/react-router",
+      "type": "build"
+    },
+    {
+      "name": "@types/react-router-dom",
+      "type": "build"
+    },
+    {
       "name": "@typescript-eslint/eslint-plugin",
       "type": "build"
     },
@@ -105,6 +113,7 @@
     },
     {
       "name": "next-router",
+      "version": "^2",
       "type": "runtime"
     },
     {
@@ -125,15 +134,12 @@
       "type": "runtime"
     },
     {
-      "name": "react",
-      "type": "runtime"
-    },
-    {
       "name": "react-dom",
       "type": "runtime"
     },
     {
       "name": "react-dom",
+      "version": "^17",
       "type": "runtime"
     },
     {
@@ -142,6 +148,11 @@
     },
     {
       "name": "react-router-dom",
+      "type": "runtime"
+    },
+    {
+      "name": "react",
+      "version": "^17",
       "type": "runtime"
     },
     {

@@ -1,9 +1,7 @@
-// @ts-ignore
-
 import { getAllBlogs } from "./lib/api";
 
 // import { useRouter } from 'next-router';
-export default function BlogPage({ blogs }: any) {
+const BlogPage = ({ blogs }: any) => {
 
   return (
     <div className="bg-white overflow-hidden">
@@ -65,6 +63,8 @@ export default function BlogPage({ blogs }: any) {
     </div>
   )
 }
+
+export default BlogPage;
 
 // export async function getStaticPaths() {
 //   const blogs = await getAllBlogs();

@@ -5,7 +5,7 @@ import BlogContents from './components/BlogContent';
 import Footer from './components/Footer';
 import { getAllBlogs } from './lib/api';
 
-export default function Home({ blogs }: any) {
+const Home = ({ blogs, paths }: any) => {
   return (
     <div>
       <Hero />
@@ -19,10 +19,10 @@ export default function Home({ blogs }: any) {
             <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
               From the blog
       </h2>
-            {JSON.stringify(blogs)}
+            {/* {JSON.stringify(blogs)} */}
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
               This could be another text.
-               {/* {JSON.stringify(paths)} */}
+               {JSON.stringify(paths)}
             </p>
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
@@ -41,6 +41,7 @@ export default function Home({ blogs }: any) {
 
   )
 }
+export default Home;
 // export async function getStaticPaths() {
 //   const blogs = await getAllBlogs();
 //   const paths = blogs?.map(b => ({ params: { slug: b.slug } }));
@@ -49,16 +50,16 @@ export default function Home({ blogs }: any) {
 //     fallback: false
 //   }
 // }
-// export async function getStaticPaths() {
-//   const blogs = await getAllBlogs();
-//   const paths = blogs.map((blog: any) => ({
-//     params: { slug: blog.slug }
-//   }))
-//   return {
-//     paths,
-//     fallback: false
-//   }
-// }
+export async function getStaticPaths() {
+  const blogs = await getAllBlogs();
+  const paths = blogs.map((blog: any) => ({
+    params: { slug: blog.slug }
+  }))
+  return {
+    paths,
+    fallback: false
+  }
+}
 
 export async function getStaticProps() {
   const blogs = await getAllBlogs();
