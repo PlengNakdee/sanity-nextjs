@@ -1,5 +1,5 @@
 
-export default function BlogContents({ imageUrl, category, title }: any) {
+export default function BlogContents({ imageUrl, category, title, releaseDate }: any) {
   return (
     <div className="flex flex-col rounded-lg shadow-lg overflow-hidden">
       <div className="flex-shrink-0">
@@ -35,15 +35,14 @@ export default function BlogContents({ imageUrl, category, title }: any) {
                 </a>
             </p>
             <div className="flex space-x-1 text-sm text-gray-500">
-              <time dateTime="2020-03-10">
-                Mar 10, 2020
-                </time>
-              <span aria-hidden="true">
+              <time>{releaseDate}</time>
+
+              {/* <span aria-hidden="true">
                 &middot;
-                </span>
-              <span>
+                </span> */}
+              {/* <span>
                 4 min read
-                </span>
+                </span> */}
             </div>
           </div>
         </div>

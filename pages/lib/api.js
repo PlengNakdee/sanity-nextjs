@@ -5,6 +5,7 @@ export async function getAllBlogs() {
     .fetch(`*[_type == "blog"]{
       title,
       category,
+      releaseDate,
       "imageUrl": image.asset->url
     }| order(date desc)[0..2]`);
   return results;

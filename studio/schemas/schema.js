@@ -19,28 +19,39 @@ export default createSchema({
         {
           title: "Title",
           name: "title",
-          type: "string"
+          type: "string",
+          validation: Rule => Rule.required()
         },
         {
           title: "Category",
           name: "category",
-          type: "string"
+          type: "string",
+          validation: Rule => Rule.required()
         },
         {
           title: 'Slug',
           name: 'slug',
-          type: 'slug'
+          type: 'slug',
+          validation: Rule => Rule.required()
         },
         {
           title: 'Image',
           name: 'image',
-          type: 'image'
+          type: 'image',
+          validation: Rule => Rule.required()
+        },
+        {
+          title: 'Release date',
+          name: 'releaseDate',
+          type: 'date',
+          validation: Rule => Rule.required()
         },
         {
           title: 'Text',
           name: 'text',
           type: 'array',
-          of: [{ type: 'block' }]
+          of: [{ type: 'block' }],
+          validation: Rule => Rule.required()
         }
       ],
     }

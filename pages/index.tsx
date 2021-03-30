@@ -25,8 +25,8 @@ export default function Home({ blogs }: any) {
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             {
-              blogs.map(({ title, imageUrl, category }: any) => (
-                <BlogContents title={title} imageUrl={imageUrl} category={category} />
+              blogs.map(({ title, imageUrl, category, releaseDate }: any) => (
+                <BlogContents title={title} imageUrl={imageUrl} category={category} releaseDate={releaseDate} />
               ))
             }
 
