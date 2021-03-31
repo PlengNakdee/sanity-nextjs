@@ -39,6 +39,9 @@ const Home = ({ blogs }: any) => {
 
   )
 }
+
+export default Home;
+
 export async function getStaticProps() {
   const blogs = await getAllBlogs();
   return {
@@ -47,4 +50,3 @@ export async function getStaticProps() {
     }
   }
 }
-export default Home;
