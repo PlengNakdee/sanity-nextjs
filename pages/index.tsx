@@ -24,12 +24,13 @@ const Home = ({ blogs }: any) => {
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             {
-              blogs.map(({ title, imageUrl, category, releaseDate, slug, subtitle }: any) => (
+              blogs.map(({ title, imageUrl, category, releaseDate, subtitle }: any) => (
                 <BlogContents title={title} imageUrl={imageUrl} category={category}
-                  releaseDate={releaseDate} slug={slug} subtitle={subtitle} />
+                  releaseDate={releaseDate} subtitle={subtitle} />
               ))
             }
 
+            {/* pagination with slug ? */}
           </div>
         </div>
       </div>
