@@ -1,4 +1,4 @@
-// import { getAllBlogs } from "../lib/api";
+
 
 const BlogContents = ({ imageUrl, category, title, releaseDate, slug, subtitle }: any) => {
   return (
