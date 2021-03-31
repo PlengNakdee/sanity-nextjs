@@ -9,6 +9,6 @@ export async function getAllBlogs() {
       releaseDate,
       slug,
       "imageUrl": image.asset->url,
-    }| order(date desc)[0..2]`);
+    }| order(date desc)`);
   return results;
 }

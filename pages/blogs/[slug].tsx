@@ -1,7 +1,7 @@
-import { getAllBlogs } from "./lib/api";
-import sanity from "./lib/sanity";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { getAllBlogs } from "../lib/api";
+import sanity from "../lib/sanity";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const BlogPage = ({ blog }: any) => {
 

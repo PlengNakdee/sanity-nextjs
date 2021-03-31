@@ -21,13 +21,14 @@ const project = new web.NextJsTypeScriptProject({
     'postcss@^7',
     'autoprefixer@^9',
     'next-sanity',
-    'next-router@^2',
+    'next-router',
     '@sanity/cli@^2',
     '@sanity/client',
-    'react@^17',
-    'react-dom@^17',
+    'react',
+    'react-dom',
     'react-router',
     'react-router-dom',
+    'swr'
   ],
 
   devDeps: [

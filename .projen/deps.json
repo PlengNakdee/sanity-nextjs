@@ -113,7 +113,6 @@
     },
     {
       "name": "next-router",
-      "version": "^2",
       "type": "runtime"
     },
     {
@@ -134,12 +133,15 @@
       "type": "runtime"
     },
     {
+      "name": "react",
+      "type": "runtime"
+    },
+    {
       "name": "react-dom",
       "type": "runtime"
     },
     {
       "name": "react-dom",
-      "version": "^17",
       "type": "runtime"
     },
     {
@@ -151,8 +153,7 @@
       "type": "runtime"
     },
     {
-      "name": "react",
-      "version": "^17",
+      "name": "swr",
       "type": "runtime"
     },
     {

@@ -13,7 +13,7 @@ const BlogContents = ({ imageUrl, category, title, releaseDate, slug, subtitle }
               {category}
             </a>
           </p>
-          <a href={`/${slug}`} className="block mt-2">
+          <a href={`blogs/${slug}`} className="block mt-2">
             <p className="text-xl font-semibold text-gray-900">
               {title}
             </p>
