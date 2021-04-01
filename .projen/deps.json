@@ -69,12 +69,11 @@
       "type": "build"
     },
     {
-      "name": "@auth0/auth0-react",
+      "name": "@auth0/nextjs-auth0",
       "type": "runtime"
     },
     {
       "name": "@sanity/cli",
-      "version": "^2",
       "type": "runtime"
     },
     {

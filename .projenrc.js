@@ -29,7 +29,7 @@ const project = new web.NextJsTypeScriptProject({
     'react-router',
     'react-router-dom',
     'swr',
-    '@auth0/auth0-react'
+    '@auth0/nextjs-auth0'
   ],
 
   devDeps: [
