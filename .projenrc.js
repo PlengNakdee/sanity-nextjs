@@ -9,6 +9,7 @@ const project = new web.NextJsTypeScriptProject({
   eslint: true,
   gitignore: [
     'public/config.js',
+    '.env.local'
   ],
 
   deps: [
