@@ -69,6 +69,10 @@
       "type": "build"
     },
     {
+      "name": "@auth0/auth0-react",
+      "type": "runtime"
+    },
+    {
       "name": "@sanity/cli",
       "version": "^2",
       "type": "runtime"

@@ -8,7 +8,7 @@ const Admin = () => {
       <div className="relative pt-10 px-4 sm:px-6 lg:px-8">
         <div>
           <h3 className="text-lg leading-6 font-medium text-gray-900">
-            Applicant Information
+            Admin Page, after logiin
   </h3>
           <p className="mt-1 max-w-2xl text-sm text-gray-500">
             Personal details and application.
