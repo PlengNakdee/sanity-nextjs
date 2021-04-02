@@ -23,18 +23,19 @@ const project = new web.NextJsTypeScriptProject({
     'autoprefixer@^9',
     'next-sanity',
     'next-router',
-    '@sanity/cli',
     '@sanity/client',
     'react',
     'react-dom',
     'react-router',
     'react-router-dom',
     'swr',
-    '@auth0/nextjs-auth0'
+    '@auth0/nextjs-auth0',
+    '@auth0/auth0-react'
   ],
 
   devDeps: [
     'concurrently',
+    '@sanity/cli',
     '@types/react-router',
     '@types/react-router-dom',
   ],
