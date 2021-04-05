@@ -13,7 +13,7 @@ const Admin = () => {
       {!loading && !user && (
         <>
           <p>
-            To test the login click in <a href="/api/login"><i>Login</i> </a>
+            To test the login click in <a href="/api/auth/login"><i>Login</i> </a>
           </p>
           <p>
             Once you have logged in you should be able to click in{' '}
