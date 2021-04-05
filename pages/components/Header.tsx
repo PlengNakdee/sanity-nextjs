@@ -25,7 +25,7 @@ const Header = () => {
 
             <a href="#" className="font-medium text-gray-500 hover:text-gray-900">Application</a>
 
-            <a href="/api/auth/login" className="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+            <a href="/Admin" className="font-medium text-indigo-600 hover:text-indigo-500">Admin</a>
 
           </div>
         </nav>
@@ -46,13 +46,13 @@ const Header = () => {
             </div>
           </div>
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
+            <a href="/About" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
 
             <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Application</a>
 
           </div>
-          <a href="/api/auth/login" className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
-            Log in
+          <a href="/Admin" className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+            Admin
           </a>
 
         </div>
