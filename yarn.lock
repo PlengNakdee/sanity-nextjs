@@ -3785,9 +3785,9 @@ next-router@^1.3.6:
     path-to-regexp "^2.1.0"
 
 next-sanity@^0.1.10:
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/next-sanity/-/next-sanity-0.1.11.tgz#8c226eae0b8d754b0e5db9644dfb9c812355b231"
-  integrity sha512-OnYOUgwADeWdRgyguBTgDKIuO3LakPfHFnqpIQEG/PjXQa7lVMPRi4taOmpP/kiMPPz3qpBk3DYIDm+rGbELfg==
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/next-sanity/-/next-sanity-0.1.12.tgz#324abdb073c9d1ed028d6a133fac315de337058f"
+  integrity sha512-hZlxaBCIX08mh/pFjzShACl0IZQ8PoKUec9mnwvZmhgELyFnjXBqwFyzrKh+M9LpqyyX9+9IT9xkQq2rOPxPzQ==
   dependencies:
     "@sanity/block-content-to-react" "^2.0.7"
     "@sanity/groq-store" "^0.1.3"
