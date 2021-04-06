@@ -24,6 +24,7 @@ const project = new web.NextJsTypeScriptProject({
     'next-sanity',
     'next-router',
     '@sanity/client',
+    '@sanity/cli',
     'react',
     'react-dom',
     'react-router',
@@ -35,7 +36,6 @@ const project = new web.NextJsTypeScriptProject({
 
   devDeps: [
     'concurrently',
-    '@sanity/cli',
     '@types/react-router',
     '@types/react-router-dom',
   ],
