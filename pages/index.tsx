@@ -20,13 +20,13 @@ const Home = ({ blogs }: any) => {
       </h2>
             <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
               This could be another text.
+      
             </p>
           </div>
           <div className="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
             {
-              blogs.map(({ title, imageUrl, category, releaseDate, subtitle }: any) => (
-                <BlogContents title={title} imageUrl={imageUrl} category={category}
-                  releaseDate={releaseDate} subtitle={subtitle} />
+              blogs.map(({ title, imageUrl, category, releaseDate, subtitle, slug }: any) => (
+                <BlogContents title={title} imageUrl={imageUrl} category={category} releaseDate={releaseDate} subtitle={subtitle} slug={slug} />
               ))
             }
 
