@@ -1,6 +1,10 @@
 {
   "dependencies": [
     {
+      "name": "@sanity/cli",
+      "type": "build"
+    },
+    {
       "name": "@types/node",
       "version": "^10.17.0",
       "type": "build"
@@ -69,11 +73,11 @@
       "type": "build"
     },
     {
-      "name": "@auth0/nextjs-auth0",
+      "name": "@auth0/auth0-react",
       "type": "runtime"
     },
     {
-      "name": "@sanity/cli",
+      "name": "@auth0/nextjs-auth0",
       "type": "runtime"
     },
     {
