@@ -1,6 +1,10 @@
 {
   "dependencies": [
     {
+      "name": "@sanity/client",
+      "type": "build"
+    },
+    {
       "name": "@types/node",
       "version": "^10.17.0",
       "type": "build"
@@ -55,7 +59,7 @@
     },
     {
       "name": "projen",
-      "version": "^0.17.25",
+      "version": "^0.17.27",
       "type": "build"
     },
     {
@@ -69,19 +73,11 @@
       "type": "build"
     },
     {
-      "name": "@auth0/auth0-react",
-      "type": "runtime"
-    },
-    {
       "name": "@auth0/nextjs-auth0",
       "type": "runtime"
     },
     {
       "name": "@sanity/cli",
-      "type": "runtime"
-    },
-    {
-      "name": "@sanity/client",
       "type": "runtime"
     },
     {
@@ -115,6 +111,14 @@
       "type": "runtime"
     },
     {
+      "name": "azure-cli",
+      "type": "runtime"
+    },
+    {
+      "name": "dotenv-keyvault",
+      "type": "runtime"
+    },
+    {
       "name": "next",
       "type": "runtime"
     },
@@ -145,18 +149,6 @@
     },
     {
       "name": "react-dom",
-      "type": "runtime"
-    },
-    {
-      "name": "react-dom",
-      "type": "runtime"
-    },
-    {
-      "name": "react-router",
-      "type": "runtime"
-    },
-    {
-      "name": "react-router-dom",
       "type": "runtime"
     },
     {
