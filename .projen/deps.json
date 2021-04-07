@@ -1,7 +1,7 @@
 {
   "dependencies": [
     {
-      "name": "@sanity/cli",
+      "name": "@sanity/client",
       "type": "build"
     },
     {
@@ -31,10 +31,6 @@
     },
     {
       "name": "@typescript-eslint/parser",
-      "type": "build"
-    },
-    {
-      "name": "azure-cli",
       "type": "build"
     },
     {
@@ -81,7 +77,7 @@
       "type": "runtime"
     },
     {
-      "name": "@sanity/client",
+      "name": "@sanity/cli",
       "type": "runtime"
     },
     {
@@ -112,6 +108,10 @@
     {
       "name": "autoprefixer",
       "version": "^9",
+      "type": "runtime"
+    },
+    {
+      "name": "azure-cli",
       "type": "runtime"
     },
     {

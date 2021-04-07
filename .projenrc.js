@@ -6,6 +6,7 @@ const project = new web.NextJsTypeScriptProject({
   name: 'sanity-nextjs',
 
   typescriptVersion: '4.1',
+  // maxNodeVersion: '6',
   eslint: true,
   gitignore: [
     'public/config.js',
@@ -23,19 +24,19 @@ const project = new web.NextJsTypeScriptProject({
     'autoprefixer@^9',
     'next-sanity',
     'next-router',
-    '@sanity/client',
     'react',
     'swr',
     '@auth0/nextjs-auth0',
     'dotenv-keyvault',
+    '@sanity/cli',
+    'azure-cli',
   ],
 
   devDeps: [
     'concurrently',
     '@types/react-router',
     '@types/react-router-dom',
-    '@sanity/cli',
-    'azure-cli'
+    '@sanity/client',
   ],
 
 });
