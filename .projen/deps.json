@@ -59,7 +59,7 @@
     },
     {
       "name": "projen",
-      "version": "^0.17.27",
+      "version": "^0.17.30",
       "type": "build"
     },
     {
@@ -116,6 +116,10 @@
     },
     {
       "name": "dotenv-keyvault",
+      "type": "runtime"
+    },
+    {
+      "name": "express",
       "type": "runtime"
     },
     {

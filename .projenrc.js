@@ -30,6 +30,7 @@ const project = new web.NextJsTypeScriptProject({
     'dotenv-keyvault',
     '@sanity/cli',
     'azure-cli',
+    'express',
   ],
 
   devDeps: [
