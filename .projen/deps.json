@@ -111,10 +111,6 @@
       "type": "runtime"
     },
     {
-      "name": "azure-cli",
-      "type": "runtime"
-    },
-    {
       "name": "dotenv-keyvault",
       "type": "runtime"
     },
