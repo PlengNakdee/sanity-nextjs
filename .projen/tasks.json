@@ -139,6 +139,16 @@
         }
       ]
     },
+    "export": {
+      "name": "export",
+      "category": "20.release",
+      "description": "Exports the application for production deployment",
+      "steps": [
+        {
+          "exec": "next export"
+        }
+      ]
+    },
     "server": {
       "name": "server",
       "category": "20.release",

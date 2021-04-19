@@ -26,7 +26,7 @@ const Profile = () => {
 
               <div className="relative md:bg-white md:p-6">
 
-                <img src={user.picture} alt={user.name} />
+                <img src={'https://placekitten.com/200/300'} />
                 <h2>{user.name}</h2>
                 <p>{user.email}</p>
 

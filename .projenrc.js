@@ -29,7 +29,7 @@ const project = new web.NextJsTypeScriptProject({
     '@auth0/nextjs-auth0',
     'dotenv-keyvault',
     '@sanity/cli',
-    'azure-cli',
+    'express',
   ],
 
   devDeps: [
